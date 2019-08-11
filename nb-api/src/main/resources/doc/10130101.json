@@ -9,9 +9,6 @@
             "sign":""
         },
         "body":{
-            "username":"aaa",
-             "password":"123"
-
-        }
+            "username":"aaa","password":"123"}
     }
 }
