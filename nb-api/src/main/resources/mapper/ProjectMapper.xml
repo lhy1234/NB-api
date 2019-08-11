@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nb3.core.mapper.ProjectMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.nb3.core.entity.Project">
+        <id column="id" property="id" />
+        <result column="hospital_id" property="hospitalId" />
+        <result column="hospital_name" property="hospitalName" />
+        <result column="sponsor_id" property="sponsorId" />
+        <result column="sponsor_name" property="sponsorName" />
+        <result column="phase" property="phase" />
+        <result column="project_name" property="projectName" />
+        <result column="speciality_id" property="specialityId" />
+        <result column="speciality_name" property="specialityName" />
+        <result column="start_date" property="startDate" />
+        <result column="end_date" property="endDate" />
+        <result column="state" property="state" />
+        <result column="manager_id" property="managerId" />
+        <result column="manager_name" property="managerName" />
+        <result column="smo_id" property="smoId" />
+        <result column="smo_name" property="smoName" />
+        <result column="smo_province" property="smoProvince" />
+        <result column="smo_city" property="smoCity" />
+        <result column="is_confirm" property="isConfirm" />
+        <result column="create_user_id" property="createUserId" />
+        <result column="create_time" property="createTime" />
+        <result column="update_user_id" property="updateUserId" />
+        <result column="update_time" property="updateTime" />
+        <result column="is_del" property="isDel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, hospital_id AS hospitalId, hospital_name AS hospitalName, sponsor_id AS sponsorId, sponsor_name AS sponsorName, phase, project_name AS projectName, speciality_id AS specialityId, speciality_name AS specialityName, start_date AS startDate, end_date AS endDate, state, manager_id AS managerId, manager_name AS managerName, smo_id AS smoId, smo_name AS smoName, smo_province AS smoProvince, smo_city AS smoCity, is_confirm AS isConfirm, create_user_id AS createUserId, create_time AS createTime, update_user_id AS updateUserId, update_time AS updateTime, is_del AS isDel
+    </sql>
+
+</mapper>

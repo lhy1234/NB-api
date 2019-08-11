@@ -1,0 +1,17 @@
+{
+    "message":{
+        "head":{
+            "transactionType":"10130101",
+            "resCode":"",
+   "message":"",
+   "token":"",
+   "timestamp":"1564324496990",
+            "sign":""
+        },
+        "body":{
+            "username":"aaa",
+             "password":"123"
+
+        }
+    }
+}

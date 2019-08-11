@@ -1,0 +1,225 @@
+//参数名:transMessage
+//到期提示(10110101)
+//测试地址:localhost:8080/dacCenter?transMessage=
+{
+  "message": {
+    "head": {
+      "ua": "22222",
+      "src": "0003000001|0401003430",
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500",
+      "transactionType": "10110101",
+      "messengerID": "9999",
+      "imei": "1",
+      "sysType": "DA"
+    },
+    "body": {
+      "userId": "1001",
+      "lottery": "FC_3D"
+    }
+  }
+}
+//响应
+//未试用-1
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804154216373",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "购买试用",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "-1",
+      "resCode": "000000",
+      "tcId": "",
+      "isExpired": "未试用",
+      "message": "成功"
+    }
+  }
+}
+
+
+//试用中4
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804154859071",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "直接购买",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "4",
+      "resCode": "000000",
+      "tcId": "101",
+      "isExpired": "试用期中",
+      "message": "成功"
+    }
+  }
+}
+
+//试用快到期5
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804155028934",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "直接购买",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "5",
+      "resCode": "000000",
+      "tcId": "101",
+      "isExpired": "您的试用服务将于2017-08-07 20:00:00到期，为不影响您的使用，请及时续费",
+      "message": "成功"
+    }
+  }
+}
+
+//试用到期1
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804155121583",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "直接购买",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "1",
+      "resCode": "000000",
+      "tcId": "101",
+      "isExpired": "您的试用服务已到期，请及时续费",
+      "message": "成功"
+    }
+  }
+}
+
+//套餐使用中0
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804155301077",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "直接购买",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "0",
+      "resCode": "000000",
+      "tcId": "101",
+      "isExpired": "未到期",
+      "message": "成功"
+    }
+  }
+}
+
+//套餐快到期2
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804155445832",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "直接购买",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "2",
+      "resCode": "000000",
+      "tcId": "101",
+      "isExpired": "您的包月30天服务将于2017-08-07 20:00:00到期，为不影响您的使用，请及时续费",
+      "message": "成功"
+    }
+  }
+}
+
+//套餐已到期3
+{
+  "message": {
+    "head": {
+      "messageID": "99992017040521050037",
+      "timeStamp": "20170405210500|20170804155535303",
+      "src": "0003000001|0401003430",
+      "sysType": "DA",
+      "messengerID": "9999",
+      "transactionType": "10110101",
+      "ua": "22222",
+      "imei": "1",
+      "deviceId": "",
+      "digest": "",
+      "resCode": "000000",
+      "message": "成功"
+    },
+    "body": {
+      "myAnalysis": "直接购买",
+      "nowDate": "2017-08-04",
+      "isExpiredId": "3",
+      "resCode": "000000",
+      "tcId": "101",
+      "isExpired": "您的包月30天服务已到期，请及时续费",
+      "message": "成功"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "message":{
+        "head":{
+            "transactionType":"10130103",
+            "resCode":"",
+            "message":"",
+            "token":"9007c19e-da96-4ddd-84d0-93c6eba22e68",
+            "timestamp":"1565500145022",
+            "sign":"97d17628e4ab888fe2bb72c0220c28e3"
+        },
+        "body":{"userId":"10","hospitalId":"5"}
+    }
+}

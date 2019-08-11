@@ -1,0 +1,101 @@
+
+#日志地址
+logback.rootdir: C:/ZZZ_Farinfo/crc_log
+
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: lhy1234
+    url: jdbc:mysql://127.0.0.1:3306/db_nb?useSSL=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    mode: HTML
+    encoding: utf-8
+  #redis
+  #redis
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password:
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+    timeout: 10000
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 2MB
+  application:
+    name: farinfo-crc-dev
+
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.nb3.core.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+   com.farinfo.crc.mapper: debug
+
+jwt:
+  config:
+    key: farinfo
+    ttl: 2592000000  #30天
+file:
+  path: C:/ZZZ_Farinfo/up
+
+#短信验证码
+farinfo:
+  crc:
+    sms:
+      length: 4
+      expireIn: 600
+      send:
+        signName: 
+        templateCode: 
+
+#微信公众号
+crc:
+ wechat:
+  appId: wx506d429f4c48c6eb
+  appSecret: 35ed82b734864bf7bd5eb7b51e12a28b
+  callback: http://1209b4fd.nat123.cc/api/open/wx/oauth/callback
+
+#阿里云短信
+
+
+#百度AI
+
+
+#系统redis前缀
+sys:
+  redis:
+    prefix: 'farinfo_crc_dev:'
+
+#des加密揭秘密钥
+field:
+  encrypt:
+    key:
+
+
+
+
+
+
